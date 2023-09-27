@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>一頁式網站</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+  <!-- Bootstrap-icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Fon awesome-icon -->
+  <link href="./fontawesome-free-5.7.2-web/css/all.css">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .section-box {
+      height: 100%;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-top: 150px;
+      text-align: center;
+    }
+
+    #home {
+      background-image: url(./images/p0.jpg);
+    }
+
+    #about {
+      background-image: url(./images/p1.jpg);
+    }
+
+    #news {
+      background-image: url(./images/p2.jpg);
+    }
+
+    #service {
+      background-image: url(./images/p4.jpg);
+    }
+
+    #contact {
+      background-image: url(./images/p5.jpg);
+    }
+
+    section h1 {
+      margin-bottom: 30px;
+    }
+
+    .txt-bg {
+      background-color: rgba(255, 255, 0, 0.478);
+      border-radius: 30px;
+      padding: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- 導覽列 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand js-scroll-trigger" href="#home"><img src="./images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- .mr-auto 把空位放到右邊(靠左) -->
+      <!-- .mx-auto 水平置中 -->
+      <!-- .ml--auto 把空位放到左邊(靠右) -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link js-scroll-trigger" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#service">Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- 選單個區塊 -->
+  <!-- HOME -->
+  <section class="section-box" id="home">
+    <div class="container">
+      <div class="row txt-bg">
+        <div>
+          <h1><i class="bi bi-egg-fried text-danger mr-3"></i>HOME</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde enim repellendus, error minus nihil
+            eum numquam pariatur molestiae nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT -->
+  <section class="section-box" id="about">
+    <div class="container">
+      <div class="row txt-bg">
+        <div>
+          <h1><i class="bi bi-flower1 text-danger mr-3"></i>ABOUT</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde enim repellendus, error minus nihil
+            eum numquam pariatur molestiae nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- NEWS -->
+  <section class="section-box" id="news">
+    <div class="container">
+      <div class="row txt-bg">
+        <div>
+            <h1><i class="bi bi-cloud-moon-fill text-danger mr-3"></i>NEWS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde enim repellendus, error minus nihil
+              eum numquam pariatur molestiae nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICE-->
+  <section class="section-box" id="service">
+    <div class="container">
+      <div class="row txt-bg">
+        <div>
+          <h1><i class="bi bi-balloon-heart text-danger mr-3"></i>SERVICE</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde enim repellendus, error minus nihil
+            eum numquam pariatur molestiae nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONTACT -->
+  <section class="section-box" id="contact">
+    <div class="container">
+      <div class="row txt-bg">
+        <div>
+          <h1><i class="bi bi-arrow-through-heart-fill text-danger mr-3"></i>CONTACT</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde enim repellendus, error minus nihil
+            eum numquam pariatur molestiae nostrum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- jQuery 主程式-->
+  <script src="./js/jquery-3.2.1.min.js"></script>
+  <!-- 捲動主程式 -->
+  <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/freelancer.min.js"></script>
+  <!-- bs主程式 -->
+  <script src="./js/bootstrap-4.0.0.js"></script>
+  <!-- bs互動元件主程式 -->
+  <script src="./js/popper.min.js"></script>
+</body>
+
+</html>
